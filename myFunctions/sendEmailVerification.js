@@ -1,7 +1,7 @@
 const api_key = process.env.MAILGUN_API_KEY;
 const domain = process.env.PROAVALON_EMAIL_ADDRESS_DOMAIN;
 const server_domain = process.env.SERVER_DOMAIN;
-const mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
+// const mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 const uuidv4 = require('uuid/v4')
 
 module.exports.sendEmailVerification = (user, email) => {
